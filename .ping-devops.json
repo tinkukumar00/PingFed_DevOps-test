@@ -1,0 +1,33 @@
+{
+    "minVersion": "0.5.4",
+    "baseURL": "https://raw.githubusercontent.com/pingidentity/pingidentity-devops-getting-started/master",
+    "baseKustomizeURL": "https://github.com/pingidentity/pingidentity-devops-getting-started",
+    "docker": {
+        "usecases": [
+            {
+                "name": "pingaccess",
+                "type": "product",
+                "description": "Standalone PingAccess Demo",
+                "path": "11-docker-compose/00-standalone/pingaccess"
+            },
+            {
+                "name": "pingcentral",
+                "type": "product",
+                "description": "Standalone PingCentral Demo",
+                "path": "11-docker-compose/00-standalone/pingcentral"
+            },
+            {
+                "name": "pingfederate",
+                "type": "product",
+                "description": "Standalone PingFederate Demo",
+                "path": "11-docker-compose/00-standalone/pingfederate"
+            },
+            {
+                "name": "pingdirectory",
+                "type": "product",
+                "description": "Standalone PingDirectory Demo",
+                "path": "11-docker-compose/00-standalone/pingdirectory"
+            }
+        ]
+    }
+}
