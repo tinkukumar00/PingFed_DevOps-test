@@ -36,6 +36,10 @@ spec:
       containers:
       - name: kubectl
         image: bitnami/kubectl:latest
+        securityContext:
+            allowPrivilegeEscalation: false
+        securityContext:
+            runAsNonRoot: true
         command: ["kubectl"]
         # Replace "deployment" in the pod name with the name of your helm deployment
         # Replace "2FederateM0re" with the password for the admin user
