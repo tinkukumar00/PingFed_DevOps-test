@@ -36,6 +36,9 @@ spec:
       containers:
       - name: kubectl
         image: bitnami/kubectl:latest
+        resources:
+          limits:
+            memory: "512Mi"
         securityContext:
             allowPrivilegeEscalation: false
         securityContext:
